@@ -6,15 +6,31 @@
   font-weight: 200; 
   box-shadow: 0px 1px 3px #2a2a2a;
   background: image_url('darkness.png');
+  color: white;
 }
 
 .navbar-inverse .navbar-brand {
   font-family: 'Bangers', cursive;
   font-weight: 100;
-  color: white;
+}
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  color: #502fa3;
+  padding: 10px;
+}
+
+.booyah-box h2, .booyah-box h1 {
+  margin: 10px;
 }
 
 .hero {
+  color: #7df442;
   background: image_url('hero.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22,6 +38,9 @@
   background-size: cover;
   height: 370px;
   box-shadow: 0px 3px 8px #2a2a2a;
+
+
+  
 }
 
 h1, h2, h3, h4, h5, h6, .navbar {
@@ -30,14 +49,14 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .frosty {
   background: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: #7df442;;
 }
 
 .frosty h1 {
   font-family: 'Bangers', cursive;
   font-weight: 100;
   text-shadow: rgba(0, 0, 0, .95) 1px 1px;
-}
+ }
 
 .frosty h2 {
    font-family: 'Bangers', cursive;
@@ -58,4 +77,6 @@ h1, h2, h3, h4, h5, h6, .navbar {
 body{
   background: image_url('bg.png');
   font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  color: #7df442;
 }
+
