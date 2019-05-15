@@ -20,14 +20,13 @@ before_action :require_authorized_for_current_section, only: [:update]
 private
 
   def require_authorized_for_current_section
-    if current_section.section.course.user != current_user
+    if current_section.course.user != current_user
       render plain: 'Unauthorized', status: :unauthorized
     end
   end
 
 def current_section
-  @current_section ||= Lesson.find(params[:id])
-  render plain: 'update!'
+  @current_section ||= Section.find(params[:id])
 end
 
 
@@ -37,14 +36,20 @@ def require_authorized_for_current_course
  end
 end
 
-helper_method :current_course
-def current_course
-  if params[:course_id]
+
+  helper_method :current_course
+  def current_course
     @current_course ||= Course.find(params[:course_id])
-  else
-    current_section.course
   end
-end
+
+#helper_method :current_course
+#def current_course
+ # if params[:course_id]
+  #  @current_course ||= Course.find(params[:course_id])
+  #else
+   # current_section.course
+  #end
+#end
 
 def section_params
   params.require(:section).permit(:title, :row_order_position)
