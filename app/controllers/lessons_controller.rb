@@ -9,7 +9,6 @@ private
 
   def require_authorized_for_current_lesson
       if current_lesson.section.course.user != current_user
-      #if !current_user.enrollments.pluck(:course_id).include?(current_lesson.section.course.id)
       redirect_to course_path(current_lesson.section.course), alert: 'Enrollment Required'
     end
    end 
