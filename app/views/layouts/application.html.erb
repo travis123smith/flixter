@@ -59,9 +59,47 @@
 
 <div id="footer">
   <div class="container">
-   <b> Teachers <b>
-    <br />
-    <%= link_to 'Teach a Course', new_instructor_course_path %>
+  <div class="row">
+      <div class="col-12 col-sm-3">
+        <b>Teachers</b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to 'Team', '#' %>
+        <br />
+        <%= link_to 'Careers', '#' %>
+        <br />
+        <%= link_to 'Privacy Policy', '#' %>
+      </div>
+      <div class="col-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        Travis86Smith@gmail.com
+        <br />
+        Planet City
+        <br />
+        Earth and the Sky
+      </div>
+      <div class="col-12 col-sm-3 social">
+        <b>Social</b>
+        <br />
+        <br />
+        <%= link_to 'https://github.com/travis123smith' do %>
+        <span class="fa fa-github-square fa-2x social-button"></span>
+        <% end %>
+        <%= link_to 'https://www.facebook.com/travis.smith.37625843' do %>
+        <span class="fa fa-facebook-square fa-2x social-button"></span>
+        <% end %>
+        <%= link_to 'https://twitter.com/TravisS07659396' do %>
+        <span class="fa fa-twitter-square fa-2x social-button"></span>
+        <% end %>
+      </div>
+    </div>
       </div>
     </div>
     
